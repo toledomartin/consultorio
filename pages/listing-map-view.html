@@ -1,0 +1,216 @@
+<template>
+	<div class="page page-listing-map-view page-google-map no-toolbar bg-color-white posr">
+		<div class="page-content m-0 p-0">
+			<div class="mapPageWide-content">
+				<div class="text-align-center d-flex ai-c jc-sb px-24">
+					<a href="#" class="back">
+						<img src="img/icons/angle-left.svg" />
+					</a>
+					<h1>Places in Dubai</h1>
+					<a href="/search/" class="search-btn">
+						<img src="img/icons/search-black.svg" />
+					</a>
+				</div>
+				<div class="listing-nav mt-20 px-24">
+					<a href="/listing-list-view/" class="solid link">List</a>
+					<a href="#" class="link sheet-open" data-sheet="#the-filter"><img src="img/icons/filter.svg" /> Filters</a>
+				</div>
+				
+				<!-- small-card-slider start -->
+				<div class="small-card-slider">
+					<div data-space-between="18" data-centered-slides="true" data-centered-slides-bounds="true" data-slides-per-view="auto" class="swiper-container swiper-init">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="/li-single/" class="the-li d-flex bg-white">
+									<img src="img/small-thumb-list/01.jpg"/>
+									<div class="list-body margin-left-half">
+										<div class="card-bottom">
+											<h3 class="d-flex ai-c"><span><i class="foi-car"></i></span> The Palm</h3>
+											<span>Architectural Landmark</span>
+											<div class="d-flex jc-sb ai-b">
+												<p>
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" /> 5.0
+													<span>(84) reviews</span>
+												</p>
+											</div>
+											<div class="facilities posr p-0 m-0 no-pseudo">
+												<div class="d-flex ai-c">
+													<h4>Facilities:</h4>
+													<i class="foi-wifi secondary-dark"></i>
+													<i class="foi-parking dark3"></i>
+													<i class="foi-no-smoking text-color-black"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="/li-single/" class="the-li d-flex bg-white">
+									<img src="img/small-thumb-list/01.jpg"/>
+									<div class="list-body margin-left-half">
+										<div class="card-bottom">
+											<h3 class="d-flex ai-c"><span><i class="foi-car"></i></span> The Palm</h3>
+											<span>Architectural Landmark</span>
+											<div class="d-flex jc-sb ai-b">
+												<p>
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" />
+													<img src="img/icons/rating-star.svg" /> 5.0
+													<span>(84) reviews</span>
+												</p>
+											</div>
+											<div class="facilities posr p-0 m-0 no-pseudo">
+												<div class="d-flex ai-c">
+													<h4>Facilities:</h4>
+													<i class="foi-wifi secondary-dark"></i>
+													<i class="foi-parking dark3"></i>
+													<i class="foi-no-smoking text-color-black"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- small-card-slider end -->
+			</div>
+			
+			<div id="GooGle__Map" class="gMap-wide"></div>
+		</div>
+
+		<!-- sheet-modal start -->
+		<div class="sheet-modal sheet-modal-push the-filter" id="the-filter">
+			<div class="toolbar posr sheet-close text-align-center">
+				<h3>Filter</h3>
+			</div>
+			<div class="sheet-modal-inner">
+				<div class="page-content">
+					<div class="filter-box">
+						<h4>Sort By</h4>
+						<div class="sort-by">
+							<span class="selected">Popularity</span>
+							<span>Avg. Rating</span>
+							<span>Distance to Me</span>
+							<span>Price: High to Low</span>
+							<span>Price: Low to High</span>
+						</div>
+					</div>
+					<div class="filter-box">
+						<h4>Ratings</h4>
+						<div class="rating-box">
+							<span class="selected">
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+							</span>
+							<span>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons secondary-light fw-4">star</i>
+								<span class="margin-left-half">& up</span>
+							</span>
+							<span>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons secondary-light fw-4">star</i>
+								<i class="f7-icons secondary-light fw-4">star</i>
+								<span class="margin-left-half">& up</span>
+							</span>
+							<span>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons fw-7">star_fill</i>
+								<i class="f7-icons secondary-light fw-4">star</i>
+								<i class="f7-icons secondary-light fw-4">star</i>
+								<i class="f7-icons secondary-light fw-4">star</i>
+								<span class="margin-left-half">& up</span>
+							</span>
+						</div>
+					</div>
+					<div class="filter-box">
+						<h4>Category</h4>
+						<div class="cate-nav d-flex jc-sb">
+							<div class="cate-item selected">
+								<i class="foi-car"></i>
+								<span>Places</span>
+							</div>
+							<div class="cate-item">
+								<i class="foi-hotel"></i>
+								<span>Hotels</span>
+							</div>
+							<div class="cate-item">
+								<i class="foi-resta"></i>
+								<span>Restaurants</span>
+							</div>
+							<div class="cate-item">
+								<i class="foi-event"></i>
+								<span>Events</span>
+							</div>
+						</div>
+					</div>
+					<div class="filter-box facilities-check">
+						<h4>Facilities</h4>
+						<ul class="ul-li no-pseudo">
+							<li>
+								<label class="item-checkbox item-checkbox-icon-start item-content p-0 no-bg">
+									<input type="checkbox" value="Books" checked />
+									<i class="icon icon-checkbox m-0"></i>
+									<div class="item-inner no-pseudo p-0">
+										<div class="item-title">Elevator in Building</div>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item-checkbox item-checkbox-icon-start item-content p-0 no-bg">
+									<input type="checkbox" />
+									<i class="icon icon-checkbox m-0"></i>
+									<div class="item-inner no-pseudo p-0">
+										<div class="item-title">Wireless Internet</div>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item-checkbox item-checkbox-icon-start item-content p-0 no-bg">
+									<input type="checkbox"/>
+									<i class="icon icon-checkbox m-0"></i>
+									<div class="item-inner no-pseudo p-0">
+										<div class="item-title">Parking</div>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item-checkbox item-checkbox-icon-start item-content p-0 no-bg">
+									<input type="checkbox"/>
+									<i class="icon icon-checkbox m-0"></i>
+									<div class="item-inner no-pseudo p-0">
+										<div class="item-title">Smoking Allowed</div>
+									</div>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="filter-box padding-bottom margin-bottom no-margin-top">
+						<div class="filter-btns d-flex jc-sb ai-c">
+							<a href="#" class="clear-filter">Clear Filters</a>
+							<a href="/listing-map-view-2/" class="sheet-close apply-btn">Show 10 Results</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- sheet-modal end -->
+	</div>
+</template>

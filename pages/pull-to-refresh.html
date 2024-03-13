@@ -1,0 +1,114 @@
+<template>
+	<div class="page page-listing-list no-toolbar bg-color-white">
+		<div class="page-content m-0">
+			<div class="d-flex jc-sb ai-c posr px-24">
+				<a href="#" class="back">
+					<img src="img/icons/angle-left.svg" />
+				</a>
+				<h1>Pull To Refresh</h1>
+				<a href="/navigation/">
+					<img src="img/40x40/02.png" />
+				</a>
+			</div>
+			<!-- the-content-blocks start -->
+			<div class="the-content-blocks margin-top">
+				<!-- small-thumb-list start -->
+				<div class="small-thumb-list ptr-content" @ptr:refresh=${loadMore}>
+					<div class="ptr-preloader">
+						<div class="preloader"></div>
+						<div class="ptr-arrow"></div>
+					</div>
+					<div class="list-wrapper">
+						${items.map((item) => $h`
+						<a href="/${item.liURL}/" class="the-li d-flex">
+							<img src="${item.picURL}"/>
+							<div class="list-body margin-left">
+								<div class="card-bottom">
+									<h3 class="d-flex ai-c"><span><i class="foi-${item.liSymble}"></i></span> ${item.liName}</h3>
+									<span>${item.liTag}</span>
+									<div class="d-flex jc-sb ai-b">
+										<p>
+											<img src="img/icons/rating-star.svg" />
+											<img src="img/icons/rating-star.svg" />
+											<img src="img/icons/rating-star.svg" />
+											<img src="img/icons/rating-star.svg" />
+											<img src="img/icons/rating-star.svg" /> 5.0
+											<span>(84) reviews</span>
+										</p>
+									</div>
+									<div class="facilities posr p-0 m-0 no-pseudo">
+										<div class="d-flex ai-c">
+											<h4>Facilities:</h4>
+											<i class="foi-wifi secondary-dark"></i>
+											<i class="foi-parking dark3"></i>
+											<i class="foi-no-smoking text-color-black"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						`)}
+					</div>
+				</div>
+				<!-- small-thumb-list start -->
+			</div>
+			<!-- the-content-blocks end -->
+		</div>
+	</div>
+</template>
+
+<script>
+	export default (props, { $update }) => {
+		// Dummy Content
+		const liURLs = ['li-single-place', 'li-single', 'li-single-restaurant', 'li-single-event'];
+		const liSymbles = ['car', 'hotel', 'resta', 'event'];
+		const liNames = ['The Palm', 'Atlantis Hotel', 'HighRise Cafe', 'Musical Event'];
+		const liTags = ['Architectural Landmark', 'Hotel & Waterpark', 'Restaurant & Bar', 'Event'];
+		let items = [
+		{
+			picURL: 'img/small-thumb-list/01.jpg',
+			liURL: 'li-single-place',
+			liSymble: 'car',
+			liName: 'The Palm',
+			liTag: 'Architectural Landmark',
+		},
+		{
+			picURL: 'img/small-thumb-list/02.jpg',
+			liURL: 'li-single',
+			liSymble: 'hotel',
+			liName: 'Atlantis Hotel',
+			liTag: 'Hotel & Waterpark',
+		},
+		{
+			picURL: 'img/small-thumb-list/03.jpg',
+			liURL: 'li-single-restaurant',
+			liSymble: 'resta',
+			liName: 'HighRise Cafe',
+			liTag: 'Restaurant & Bar',
+		},
+		]
+		
+		const loadMore = (e, done) => {
+			setTimeout(() => {
+				const picURL = 'img/small-thumb-list/0' + (Math.floor(Math.random() * 2) + 1) + '.jpg';
+				const liURL = liURLs[Math.floor(Math.random() * liURLs.length)];
+				const liSymble = liSymbles[Math.floor(Math.random() * liSymbles.length)];
+				const liName = liNames[Math.floor(Math.random() * liNames.length)];
+				const liTag = liTags[Math.floor(Math.random() * liTags.length)];
+				
+				items.push({
+					picURL,
+					liURL,
+					liSymble,
+					liName,
+					liTag,
+				});
+
+				$update();
+				done();
+			}, 1000);
+		}
+		
+		return $render;
+	}
+</script>

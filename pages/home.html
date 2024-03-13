@@ -1,0 +1,491 @@
+<template>
+	<div class="page page-home bg-color-white">
+		<div class="page-content no-padding hide-toolbar-on-scroll">
+			<!-- home-header start -->
+			<div class="home-header">
+				<div class="d-flex ai-c jc-sb px-24">
+					<h1>Explore</h1>
+					<a href="/navigation/">
+						<img src="img/40x40/01.png" />
+					</a>
+				</div>
+				<div class="header-tabs px-24">
+					<div class="tab-list jc-sb padding-horizontal">
+						<a href="#places" class="tab-link tab-link-active">
+							<i class="foi-car"></i>
+							<span>PLACES</span>
+						</a>
+						<a href="#hotels" class="tab-link">
+							<i class="foi-hotel"></i>
+							<span>HOTELS</span>
+						</a>
+						<a href="#restaurants" class="tab-link">
+							<i class="foi-resta"></i>
+							<span>RESTAURANTS</span>
+						</a>
+						<a href="#event" class="tab-link">
+							<i class="foi-event"></i>
+							<span>EVENT</span>
+						</a>
+					</div>
+					<div class="tabs-swipeable-wrap" data-effect="fade" data-fadeEffect='{"crossFade": true}'>
+						<div class="tabs">
+							<div id="places" class="page-content tab tab-active">
+								<div class="list no-hairlines-md no-margin-bottom">
+									<ul class="no-pseudo">
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap">
+													<input type="text" placeholder="You looking for?" />
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap posr">
+													<input type="text" placeholder="Location" />
+													<i class="fo fo-location map-pointer"></i>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<a href="/listing-list-view/" class="primary-dark-bg color-white width-100 header-search-btn">
+												<i class="fo fo-search-white"></i>
+												<span>Search</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="hotels" class="page-content tab">
+								<div class="list no-hairlines-md no-margin-bottom">
+									<ul class="no-pseudo">
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap">
+													<input type="text" placeholder="You looking for?" />
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap posr">
+													<input type="text" placeholder="Location" />
+													<i class="fo fo-location map-pointer"></i>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<a href="#" class="primary-dark-bg color-white width-100 header-search-btn">
+												<i class="fo fo-search-white"></i>
+												<span>Search</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="restaurants" class="page-content tab">
+								<div class="list no-hairlines-md no-margin-bottom">
+									<ul class="no-pseudo">
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap">
+													<input type="text" placeholder="You looking for?" />
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap posr">
+													<input type="text" placeholder="Location" />
+													<i class="fo fo-location map-pointer"></i>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<a href="#" class="primary-dark-bg color-white width-100 header-search-btn">
+												<i class="fo fo-search-white"></i>
+												<span>Search</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="event" class="page-content tab">
+								<div class="list no-hairlines-md no-margin-bottom">
+									<ul class="no-pseudo">
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap">
+													<input type="text" placeholder="You looking for?" />
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<div class="item-inner p-0 no-pseudo">
+												<div class="item-input-wrap posr">
+													<input type="text" placeholder="Location" />
+													<i class="fo fo-location map-pointer"></i>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input p-0">
+											<a href="#" class="primary-dark-bg color-white width-100 header-search-btn">
+												<i class="fo fo-search-white"></i>
+												<span>Search</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- home-header end -->
+
+			<div class="px-24 mt-20">
+				<!-- single-card start -->
+				<div class="single-card">
+					<h3>Discover more in Dubai</h3>
+					<a href="/listing-list-view/" class="btn-h40 link">Keep Exploring</a>
+				</div>
+				<!-- single-card end -->
+			</div>
+
+			<!-- big-thumb-slider start -->
+			<div class="big-thumb-slider">
+				<div class="section-header d-flex jc-sb ai-c px-24">
+					<h2>Latest Listings</h2>
+					<a href="/listing-list-view/" class="link">See All</a>
+				</div>
+				<div data-space-between="18" data-centered-slides="true" data-centered-slides-bounds="true" data-slides-per-view="auto" class="swiper-container swiper-init">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/01.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom margin-top">
+								<h3>Ithaa Restaurant.</h3>
+								<h3>Rangali Island, Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/02.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom margin-top">
+								<h3>How to get</h3>
+								<h3>Booking in Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/01.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom margin-top">
+								<h3>Ithaa Restaurant.</h3>
+								<h3>Rangali Island, Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/02.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom margin-top">
+								<h3>How to get</h3>
+								<h3>Booking in Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- big-thumb-slider end -->
+
+			<!-- big-card start -->
+			<div class="big-card">
+				<h3>How to get through airport security</h3>
+				<p>with covid protocols</p>
+				<a href="/blog-detail/" class="link">Know More</a>
+			</div>
+			<!-- big-card end -->
+
+			<!-- small-thumb-slider start -->
+			<div class="small-thumb-slider margin-bottom">
+				<div class="section-header d-flex jc-sb ai-c px-24">
+					<h2>Popular Cities</h2>
+					<a href="/cities-screen/" class="link">See All</a>
+				</div>
+				<div data-space-between="8" data-slides-per-view="auto" class="swiper-container swiper-init">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card-small" style="background: url(img/small-thumb-slider/01.jpg) no-repeat center center / cover;">
+								<a href="/listing-list-view/">
+									<span>17 Locations</span>
+									<p>India</p>
+									<h3>Agra</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card-small" style="background: url(img/small-thumb-slider/02.jpg) no-repeat center center / cover;">
+								<a href="/listing-list-view/">
+									<span>21 Locations</span>
+									<p>USA</p>
+									<h3>San Diego</h3>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card-small" style="background: url(img/small-thumb-slider/03.jpg) no-repeat center center / cover;">
+								<a href="/listing-list-view/">
+									<span>17 Locations</span>
+									<p>India</p>
+									<h3>Jaipur</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- small-thumb-slider end -->
+
+			<!-- big-thumb-slider start -->
+			<div class="big-thumb-slider bts-v2">
+				<div class="section-header text-align-center px-24 posr">
+					<h3 class="text-color-white">Top Rated Listings</h3>
+					<span>Hand Picked</span>
+				</div>
+				<div data-space-between="18" data-centered-slides="true" data-centered-slides-bounds="true" data-slides-per-view="auto" class="swiper-container swiper-init no-margin-top">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/03.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/hotel-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Hotel / $$$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom">
+								<h3>Ithaa Restaurant.</h3>
+								<h3>Rangali Island, Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/02.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom">
+								<h3>How to get</h3>
+								<h3>Booking in Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/01.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom">
+								<h3>Ithaa Restaurant.</h3>
+								<h3>Rangali Island, Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<span class="bookmarker">
+								<i class="fo fo-bookmark"></i>
+							</span>
+							<a href="/li-single-restaurant/" class="card-md">
+								<div class="card-thumb" style="background: url(img/big-thumb-slider/02.jpg) no-repeat center center / cover">
+									<div class="d-flex jc-sb ai-c width-100 padding no-padding-top">
+										<div class="card-tag d-flex ai-c">
+											<a href="#" class="tag-mark">
+												<img src="img/icons/dining-white.svg" />
+											</a>
+											<div class="tag-name">
+												<h4>Restaurant / $$</h4>
+												<p>By Christoph</p>
+											</div>
+										</div>
+										<a href="#" class="card-state margin-top-half">Opened</a>
+									</div>
+								</div>
+							</a>
+							<div class="card-bottom">
+								<h3>How to get</h3>
+								<h3>Booking in Maldives</h3>
+								<div class="d-flex jc-sb ai-b">
+									<p>
+										<img src="img/icons/rating-star.svg" /> 5.0
+										<span>(84) reviews</span>
+									</p>
+									<a href="#" class="link direction-btn">Directions</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- big-thumb-slider end -->
+		</div>
+	</div>
+</template>

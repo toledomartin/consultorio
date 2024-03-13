@@ -1,0 +1,165 @@
+<template>
+	<div class="page page-navigation gradient-head no-toolbar">
+		<div class="page-content m-0">
+			<div class="the-page-header">
+				<div class="d-flex jc-sb px-24">
+					<h1>Stephanie <br/>Brown</h1>
+					<a href="#" class="back">
+						<i class="f7-icons fw-7">xmark</i>
+					</a>
+				</div>
+			</div><!-- /.the-page-header -->
+			
+			<!-- the-content-blocks start -->
+			<div class="the-content-blocks">
+				<div class="content-block">
+					<div class="user-details d-flex">
+						<img src="img/avatar/09.png" />
+						<ul>
+							<li>
+								<span>Active Listings</span>
+								<p>35</p>
+							</li>
+							<li>
+								<span>Total Reviews</span>
+								<p>77</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- /.content-block -->
+				
+				<div class="content-block">
+					<h3>General</h3>
+					<ul class="controls margin-top">
+						<li class="d-flex jc-sb ai-c">
+							<p class="d-flex ai-c">
+								<img src="img/controls/align.svg" />
+								<span class="content-dir">Content Style - RTL</span>
+							</p>
+							<div class="control-btn">
+								<label class="toggle toggle-init">
+									<input type="checkbox"/>
+									<span class="toggle-icon theme-direction"></span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<a href="/components/" class="link jc-sb ai-c width-100">
+								<p class="d-flex ai-c">
+									<img src="img/controls/component.svg" />
+									<span>Components</span>
+								</p>
+								<div class="control-btn">
+									<i class="f7-icons">arrow_right</i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/pull-to-refresh/" class="link jc-sb ai-c width-100">
+								<p class="d-flex ai-c">
+									<img src="img/controls/refresh.svg" />
+									<span>Pull to Refresh</span>
+								</p>
+								<div class="control-btn">
+									<i class="f7-icons">arrow_right</i>
+								</div>
+							</a>
+						</li>
+						<li class="d-flex jc-sb ai-c">
+							<p class="d-flex ai-c">
+								<img src="img/controls/share.svg" />
+								<span>Share</span>
+							</p>
+							<div class="control-btn">
+								<a href="#" class="link cw primary-light-bg popover-open" data-popover=".share-btns">TRY</a>
+							</div>
+						</li>
+						<li class="d-flex jc-sb ai-c">
+							<p class="d-flex ai-c">
+								<img src="img/controls/bell.svg" />
+								<span>Notification</span>
+							</p>
+							<div class="control-btn">
+								<a href="#" class="link cw primary-light-bg" @click=${notification} id="notify">TRY</a>
+							</div>
+						</li>
+					</ul>
+				</div><!-- /.content-block -->
+				
+				<div class="content-block">
+					<div class="pages">
+						<h3>Pages</h3>
+						<a href="/">Let's Get Started <i class="f7-icons">arrow_right</i></a>
+						<a href="/create-account/">Create Account <i class="f7-icons">arrow_right</i></a>
+						<a href="/otp/">OTP Verification <i class="f7-icons">arrow_right</i></a>
+						<a href="/walkthrough/">Walkthrough 1 <i class="f7-icons">arrow_right</i></a>
+						<a href="/walkthrough-v2/">Walkthrough 2 <i class="f7-icons">arrow_right</i></a>
+						<a href="/permissions/">Permissions <i class="f7-icons">arrow_right</i></a>
+						<a href="/home/">Explore 1 <i class="f7-icons">arrow_right</i></a>
+						<a href="/home-v2/">Explore 2 <i class="f7-icons">arrow_right</i></a>
+						<a href="/listing-list-view/">Listing List View <i class="f7-icons">arrow_right</i></a>
+						<a href="/listing-map-view/">Listing Map View 1 <i class="f7-icons">arrow_right</i></a>
+						<a href="/listing-map-view-2/">Listing Map View 2 <i class="f7-icons">arrow_right</i></a>
+						<a href="/search/">Search <i class="f7-icons">arrow_right</i></a>
+						<a href="/gallery/">Gallery Screen <i class="f7-icons">arrow_right</i></a>
+						<a href="/reviews/">All Reviews <i class="f7-icons">arrow_right</i></a>
+						<a href="/write-review/">Review Submission <i class="f7-icons">arrow_right</i></a>
+						<a href="/cities-screen/">Cities Screen <i class="f7-icons">arrow_right</i></a>
+						<a href="/li-single/">Listing Details - Hotels <i class="f7-icons">arrow_right</i></a>
+						<a href="/li-single-restaurant/">Listings Details - Restaurants <i class="f7-icons">arrow_right</i></a>
+						<a href="/li-single-event/">Listings Details - Events <i class="f7-icons">arrow_right</i></a>
+						<a href="/li-single-place/">Listings Details - Places <i class="f7-icons">arrow_right</i></a>
+						<a href="/notification/">Notifications <i class="f7-icons">arrow_right</i></a>
+						<a href="/pricing/">Pricing <i class="f7-icons">arrow_right</i></a>
+						<a href="/bookmarks/">Bookmarks <i class="f7-icons">arrow_right</i></a>
+						<a href="/messages/">Chat List <i class="f7-icons">arrow_right</i></a>
+						<a href="/chat/">Chat Detail <i class="f7-icons">arrow_right</i></a>
+						<a href="/blog-detail/">Blog Detail <i class="f7-icons">arrow_right</i></a>
+						<a href="/navigation/">Profile + Navigation <i class="f7-icons">arrow_right</i></a>
+						<a href="/add-list/">Add Listings <i class="f7-icons">arrow_right</i></a>
+						<div class="sign-out">
+							<a href="/" class="link">Sign Out</a>
+						</div>
+					</div>
+				</div><!-- /.content-block -->
+			</div>
+			<!-- the-content-blocks end -->
+		</div>
+
+		<div class="popover share-btns">
+			<div class="popover-inner d-flex flex-column">
+				<a href="#"><img src="img/icons/apple.svg" /></a>
+				<a href="#"><img src="img/icons/google.svg" /></a>
+				<a href="#"><img src="img/icons/facebook.svg" /></a>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+	export default (props, { $f7, $theme, $on }) => {
+		let addNotification;
+		const notification = () => {
+			// Create toast
+			if (!addNotification) {
+				addNotification = $f7.toast.create({
+					text: 'This is text for notification',
+					position: 'top',
+					closeTimeout: 2000,
+					closeButton: true,
+					closeButtonText: '<i class="f7-icons">xmark_circle</i>',
+				});
+			}
+			addNotification.open();
+		}
+		$on('pageBeforeOut', () => {
+			$f7.toast.close();
+		})
+		
+		$on('pageBeforeRemove', () => {
+			if (addNotification) addNotification.destroy();
+		});
+		
+		return $render;
+	}
+</script>

@@ -1,0 +1,61 @@
+<template>
+	<div class="page page-search bg-color-white">
+		<div class="page-content no-margin-top px-24 hide-toolbar-on-scroll">
+			<div class="global-search search-border d-flex jc-sb ai-c">
+				<form class="searchbar no-pseudo">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Location, Hotel, Event etc" class="no-bg"/>
+						</div>
+					</div>
+				</form>
+				<button>
+					<img src="img/icons/search-lg.svg" />
+				</button>
+			</div><!-- /.global-search -->
+			<div class="place-search search-border d-flex jc-sb ai-c">
+				<i><img src="img/icons/plane.svg" width="18" height="18"/></i>
+				<form class="searchbar no-pseudo no-border">
+					<div class="searchbar-inner p-0">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Search Nearest Places" class="no-bg"/>
+						</div>
+					</div>
+				</form>
+			</div><!-- /.place-search -->
+			<div class="recent-search">
+				<h4>Recent Searches</h4>
+				<a href="/listing-list-view/" class="recent-search-card search-border d-flex jc-sb">
+					<i><img src="img/icons/location.svg" /></i>
+					<div class="rs-inner">
+						<p>Dubai</p>
+						<span>Emirates of Dubai, United Arab Emirates</span>
+					</div>
+				</a>
+				<a href="/listing-map-view/" class="recent-search-card d-flex jc-sb">
+					<i><img src="img/icons/location.svg" /></i>
+					<div class="rs-inner">
+						<p>Chandigarh</p>
+						<span>Union Territory, India</span>
+					</div>
+				</a>
+			</div><!-- ./recent-search -->
+			<div class="popular-search">
+				<h4>Popular Searches</h4>
+				<a href="/listing-map-view-2/" class="recent-search-card search-border d-flex jc-sb">
+					<i><img src="img/icons/star-outline-lg.svg" /></i>
+					<div class="rs-inner">
+						<p>New York</p>
+					</div>
+				</a>
+				<a href="/listing-map-view-2/" class="recent-search-card d-flex jc-sb">
+					<i><img src="img/icons/star-outline-lg.svg" /></i>
+					<div class="rs-inner">
+						<p>Agra</p>
+						<span>India</span>
+					</div>
+				</a>
+			</div><!-- ./popular-search -->
+		</div>
+	</div>
+</template>
